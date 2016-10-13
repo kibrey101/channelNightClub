@@ -1,0 +1,46 @@
+html, body {background-image: url('../img/blackpatternbg.jpg');color:#fff; overflow-x: hidden;border: none;
+background-size: 100% 100%;font-family: "Play","Wallpoet","Open Sans", sans-serif;}
+.homeLogo{height: 500px;
+          background-image: url('./img/logobg.jpg'); background-repeat: no-repeat;background-size: 100% 135%;}
+.navbar-brand{color:#fff; font-size: 1.8em;font-family: "Play","Wallpoet","Open Sans", sans-serif;
+              text-align: center;margin: 10px 0;font-weight: bold;}.navbar-brand:hover{color:#fff;}
+.mainNav{height: 59px;background-image: url('../img/burried.png');text-align: center;border:none;border: 1px solid #444;}
+.navbar .navbar-nav {
+  display: inline-block; border: none!important;
+  float: none;
+  vertical-align: top;
+}
+.collapseMenu ul{ border: none!important;}
+.collapseMenu ul li{padding:4px 4px 3px 4px; border: none!important;display: block;}
+.collapseMenu ul li a{color: #fff!important; margin: 0 5px; font-size: 1.2em;display: block;
+              font-family: "Play","Wallpoet","Open Sans", sans-serif;}
+.collapseMenu ul li:hover{background-color: #222; color: #000;border-radius: 1px;}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.introSlide{height:75vh;}
+.topEvents{background-image: url('../img/bodybg.jpg');color: #fff!important;margin: 30px 0;}
+.checkEventsBtn{color:#ff4040;text-align: left;}
+.pageFooter{margin: 20px 0;background-color: #222;height: 250px;margin-bottom: 0;padding-bottom: 0!important;}
+.socializeRow{padding: 10px;}
+
+
+@media screen and (max-width:48em){
+.collapseMenu{margin-top: 50px;}
+.navbar .navbar-nav {display: block;background-image: url('../img/burried.png');}
+.navbar-brand{font-size: 0.7em;}
+.mainNav{border:none;}
+.collapseMenu ul li{border-bottom:1px solid #aaa!important;}
+.homeLogo{height: 150px;background-size: 100% 100%;}
+.navbar-brand h1{font-size: 1em;}
+.carousel-inner{height: 40vh;}
+}
+
+
+.activeClass{background-color: #222;}
+.fixed-to-top{
+  position: fixed;top:0;width: inherit;background-color: green;
+}
+
+
+

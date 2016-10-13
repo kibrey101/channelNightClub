@@ -1,0 +1,80 @@
+    <div class="container">
+        <h2><a ui-sref="home.start" class="navbar-brand">COCO CHANELLE</a></h2>
+    </div>
+    <div class="container introSlide">
+     <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators" style="margin-left:1%;">
+       <li ng-repeat="slide in slides" ng-class="$index==0?'active':'';" style="border-radius:0!important;margin:0 3px;"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item" ng-class="$index==0?'active':'';" ng-repeat="slide in slides">
+          <md-card><img ng-src="{{slide.image}}" alt="" style="height:75vh;border:1px solid #333;">
+            
+          </md-card>
+        </div>
+      </div>
+        <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+       <div class="navbar navbar-default navbar-static-top mainNav" check-position>
+        
+        <a href="#" class="btn btn-clear navbar-toggle"
+        data-toggle="collapse" data-target=".navHeaderCollapse">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </a>
+        <div class="collapse navbar-collapse navHeaderCollapse collapseMenu" toggle-scroll-class>
+          <ul class="nav navbar-nav navbar-center">
+            <li ng-class="{activeClass:checkActive('/home/start')}"><a ui-sref="home.start" class="navbar-link">HOME</a></li>
+            <li ng-class="{activeClass:checkActive('/home/events')}"><a ui-sref="home.events" class="navbar-link">EVENTS</a></li>
+            <li ng-class="{activeClass:checkActive('/home/news')}"><a ui-sref="home.news" class="navbar-link">NEWS</a></li>
+            <li ng-class="{activeClass:checkActive('/home/photos')}"><a ui-sref="home.photos" class="navbar-link">PHOTOS</a></li>
+            <li ng-class="{activeClass:checkActive('/home/videos')}"><a ui-sref="home.videos" class="navbar-link">VIDEOS</a></li>
+            <li ng-class="{activeClass:checkActive('/home/about')}"><a ui-sref="home.about" class="navbar-link">ABOUT</a></li>
+          </ul>
+
+        </div>
+       </div>
+       <div ui-view></div>   
+       <div class="row pageFooter">
+       <button class="btn btn-block btn-primary" id="myButton" check-button>click me</button>
+          <!-- <div class="container socializeRow">
+              <div class="row" style="background-color:green;">
+                <h4 class="col-xs-12 col-sm-6" style="padding-left:30px;">COME AND FIND US HERE</h4>
+              </div>
+              <div class="row">
+                <div class=" col-xs-2 col-md-1"style="margin:0!important;">
+                  <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/"  style="margin: 3px 20px;padding:0;">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </div>
+                <div class="col-xs-2 col-md-1"style="margin:0!important;">
+                  <a class="btn btn-social-icon btn-twitter" href="https://www.facebook.com/" style="margin: 3px 20px;">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="col-xs-2 col-md-1"style="margin:0!important;">
+                  <a class="btn btn-social-icon btn-instagram" href="https://www.facebook.com/" style="margin: 3px 20px;">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+                <div class="col-xs-2 col-md-1"style="margin:0!important;">
+                  <a class="btn btn-social-icon btn-google" href="https://www.facebook.com/" style="margin: 3px 20px;">
+                    <i class="fa fa-google"></i>
+                  </a>
+                </div>
+                <div class="col-xs-2 col-md-1"style="margin:0!important;">
+                  <a class="btn btn-social-icon btn-linkedin" href="https://www.facebook.com/" style="margin: 3px 20px;">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+       </div>
+    </div>
+    

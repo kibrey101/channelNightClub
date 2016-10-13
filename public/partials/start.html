@@ -1,0 +1,42 @@
+<div class="row topEvents" style="color:#fff;">
+  <div class="row">
+    <h3 class="col-xs-12 col-sm-6" style="padding:15px 0 0 35px;">UPCOMING EVENTS</h3>
+  </div>
+  <div class="col-sm-6 col-md-4" ng-repeat="event in events">
+    <div class="thumbnail topEvents" style="padding:0;border:1px solid #999;border-radius:0;">
+      <img ng-src="{{event.image}}" alt="DJ photo" style="height:250px;width:100%;">
+      <div class="caption" style="background-color:#111;">
+        <h4 style="color:#fff;border-bottom:1px solid #555;">{{event.name}}, {{event.time}}</h4>
+        <p style="color:#fff;margin:8px 0;">{{event.description}} 
+          <button class="btn btn-primary btn-block" style="border:1px solid #999;border-radius:0;">
+            buy tickets
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <a ui-sref="home.events" class="btn checkEventsBtn col-sm-6" style="padding-left:35px;margin:0;"><h4>CHECK ALL EVENTS...</h4></a>
+  </div>
+</div>
+
+<div class="row topEvents" style="color:#fff;">
+  <div class="row">
+    <h3 class="col-xs-12 col-sm-6" style="padding:15px 0 0 35px;">TOP NEWS</h3>
+  </div>
+  <div class="col-sm-6 col-md-4" ng-repeat="event in events">
+    <div class="thumbnail topEvents" style="padding:0;border:1px solid #999;border-radius:0;">
+      <img ng-src="{{event.image}}" alt="DJ photo" style="height:250px;width:100%;">
+      <div class="caption" style="background-color:#111;">
+        <h4 style="color:#fff;border-bottom:1px solid #555;">{{event.name}}, {{event.time}}</h4>
+        <p style="color:#fff;margin:8px 0;">{{event.description}} 
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <a ui-sref="home.events" class="btn btn-lg checkEventsBtn col-sm-6" style="padding-left:35px;padding-right:30px;"><h4>CHECK ALL NEWS...</h4></a>
+  </div>
+</div>
+
+
